@@ -1,0 +1,31 @@
+SĀKT
+
+Paņemt 2 maizes šķēles
+
+JA maize_jāgrauzdē = PATIESA TAD
+    Ielikt maizi tosterī
+    Gaidīt līdz maize gatava
+BEIGAS_JA
+
+Uzsmērēt sviestu vai mērci
+
+JA pievienot_pildījumu = PATIESA TAD
+    Uzlikt sieru
+    Uzlikt desu
+    Uzlikt dārzeņus
+
+    KAMĒR vēl_ir_piedevas = PATIESA
+        Pievienot papildu sastāvdaļu
+        vēl_ir_piedevas = APLAMA
+    BEIGAS_KAMĒR
+BEIGAS_JA
+
+Uzliek otru maizes šķēli
+
+JA sagriezt = PATIESA TAD
+    Sagriezt sviestmaizi uz pusēm
+BEIGAS_JA
+
+Izvadīt "Sviestmaize gatava"
+
+BEIGT
