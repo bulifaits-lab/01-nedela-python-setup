@@ -1,0 +1,39 @@
+1.algoritms
+Doties uz veikalu vai kafejnīcu.
+
+Apskatīt piedāvājumu.
+
+Izvēlēties kafijas veidu.
+
+Veikt pasūtījumu.
+
+Samaksāt par kafiju.
+
+Lēmums: Vai maksājums izdevās?
+
+Ja jā → Saņemt kafiju.
+
+Ja nē → Izvēlēties citu maksājuma veidu un atkārtot 5. soli.
+
+Process beidzas, kad kafija ir saņemta.
+
+2.algoritms
+Ieslēgt datoru vai telefonu.
+
+Atvērt interneta pārlūku vai e-pasta lietotni.
+
+Atvērt e-pasta mājaslapu.
+
+Ievadīt e-pasta adresi.
+
+Ievadīt paroli.
+
+Nospied “Pieteikties”.
+
+Lēmums: Vai parole ir pareiza?
+
+Ja jā → Atvērt ienākošās vēstules.
+
+Ja nē → Parādīt kļūdas ziņojumu un atkārtot 4.–6. soli vai izvēlēties paroles atjaunošanu.
+
+Process beidzas, kad redzama pastkaste.
