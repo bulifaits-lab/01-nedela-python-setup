@@ -48,7 +48,8 @@ user_input = input("Ievadi kādu skaitli: ")
 
 # Konversija uz int
 try:
-    number_int = int(user_input)
+    number_float = float(user_input)
+    number_int = int(number_float)
     print("Konvertēts uz int:", number_int)
 except ValueError:
     print("Nevar konvertēt uz int!")
