@@ -1,74 +1,74 @@
 # type_explorer.py
-# Mērķis: Demonstrēt Python datu tipus, truthy/falsy uzvedību un konversijas
+# Demonstrē Python datu tipus, truthy/falsy un konversijas ar lietotāja ievadi
 
 print("=== PAMATA DATU TIPI ===")
 
-# 1. Piešķiram vismaz 2 pamata tipu vērtības mainīgajiem
-teksts = "Sveika, pasaule!"     # str
-skaitlis = 42                   # int
-decimālskaitlis = 3.14          # float
-loģiskā_vertība = True          # bool
-nekas = None                    # NoneType
+teksts = "Python"
+skaitlis = 25
+decimals = 4.75
+loģiskais = False
+nekas = None
 
-# 2. Konsoles izvade ar katras vērtības tipu
 print(teksts, "->", type(teksts))
 print(skaitlis, "->", type(skaitlis))
-print(decimālskaitlis, "->", type(decimālskaitlis))
-print(loģiskā_vertība, "->", type(loģiskā_vertība))
+print(decimals, "->", type(decimals))
+print(loģiskais, "->", type(loģiskais))
 print(nekas, "->", type(nekas))
 
 
 print("\n=== TRUTHY / FALSY PIEMĒRI ===")
 
-# 3. Truthy / Falsy piemēri
-
-# Tukša virkne ir Falsy
+# Tukša virkne
 if "":
     print("Tukša virkne ir True")
 else:
     print("Tukša virkne '' ir Falsy")
 
-# Skaitlis 0 ir Falsy
+# Skaitlis 0
 if 0:
     print("0 ir True")
 else:
     print("Skaitlis 0 ir Falsy")
 
-# Ne-tukšs saraksts ir Truthy
+# Ne-tukšs saraksts
 if [1, 2, 3]:
     print("Saraksts [1,2,3] ir Truthy")
 
-# None ir Falsy
+# None
 if None:
     print("None ir True")
 else:
     print("None ir Falsy")
 
 
-print("\n=== TIEŠĀS DATU TIPU KONVERSIJAS ===")
+print("\n=== LIETOTĀJA IEVADES KONVERSIJAS ===")
 
-# 4. Explicit conversion ar robežgadījumiem
+# Lietotāja ievade
+user_input = input("Ievadi kādu skaitli: ")
 
-# String uz int (derīgs gadījums)
-teksts_skaitlis = "100"
-print("int('100') =", int(teksts_skaitlis))
-
-# String uz int (nederīgs gadījums)
+# Konversija uz int
 try:
-    print("int('abc') =", int("abc"))
-except ValueError as e:
-    print("Kļūda konvertējot 'abc' uz int:", e)
+    number_int = int(user_input)
+    print("Konvertēts uz int:", number_int)
+except ValueError:
+    print("Nevar konvertēt uz int!")
 
-# Float uz int (zaudē decimāldaļu)
-print("int(3.99) =", int(3.99))
+# Konversija uz float
+try:
+    number_float = float(user_input)
+    print("Konvertēts uz float:", number_float)
+except ValueError:
+    print("Nevar konvertēt uz float!")
 
-# String uz float
-print("float('5.75') =", float("5.75"))
+# Konversija uz bool
+print("Konvertēts uz bool:", bool(user_input))
 
-# String uz bool (robežgadījums)
-print("bool('False') =", bool("False"))  # jebkura ne-tukša virkne ir True
 
-# Tukša virkne uz bool
-print("bool('') =", bool(""))  # tukša virkne ir False
+print("\n=== PAPILDUS KONVERSIJAS PIEMĒRI ===")
 
-print("\n=== PROGRAMMA PABEIGTA ===")
+print("int(3.9) =", int(3.9))        # no float uz int
+print("float('10.5') =", float("10.5"))
+print("bool('False') =", bool("False"))  # jebkura ne-tukša virkne = True
+print("bool('') =", bool(""))            # tukša virkne = False
+
+print("\nProgramma pabeigta.")
