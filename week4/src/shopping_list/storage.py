@@ -16,7 +16,6 @@ def load_list():
 def save_list(items):
     """Saglabā sarakstu"""
     with open(FILE, "w", encoding="utf-8") as f:
-<<<<<<< HEAD
         json.dump(items, f, indent=2, ensure_ascii=False) 
 
 PRICES_FILE = "prices.json"
@@ -43,6 +42,3 @@ def set_price(name, price):
     prices = load_prices()
     prices[name] = price
     save_prices(prices)
-=======
-        json.dump(items, f, indent=2, ensure_ascii=False)
->>>>>>> 152a66bbd89c19ca3c25b70eb3df3f09e00a15d0
