@@ -1,1 +1,37 @@
-[]
+[
+  {
+    "name": "udens",
+    "qty": 1,
+    "price": 1.5
+  },
+  {
+    "name": "maize",
+    "qty": 3,
+    "price": 0.5
+  },
+  {
+    "name": "Bread",
+    "qty": 1,
+    "price": 14.99
+  },
+  {
+    "name": "Milk",
+    "qty": 2,
+    "price": 4.99
+  },
+  {
+    "name": "Milk",
+    "qty": 2,
+    "price": 4.99
+  },
+  {
+    "name": "candy",
+    "qty": 32,
+    "price": 1.5
+  },
+  {
+    "name": "popcorn",
+    "qty": 1,
+    "price": 0.5
+  }
+]
