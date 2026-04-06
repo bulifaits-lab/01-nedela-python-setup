@@ -16,5 +16,11 @@
     "amount": 3.0,
     "category": "Izklaide",
     "description": "sokolade"
+  },
+  {
+    "date": "2026-04-01",
+    "amount": 15.0,
+    "category": "Komunālie maksājumi",
+    "description": "apkure"
   }
 ]

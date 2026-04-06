@@ -1,15 +1,15 @@
 import json
-import os
+from pathlib import Path
 
-FILE_PATH = "expenses.json"
+FILE_PATH = Path(__file__).resolve().parent / "expenses.json"
 
 
 def load_expenses():
     """Nolasa izdevumus no JSON faila."""
-    if not os.path.exists(FILE_PATH):
+    if not FILE_PATH.exists():
         return []
 
-    with open(FILE_PATH, "r", encoding="utf-8") as f:
+    with FILE_PATH.open("r", encoding="utf-8") as f:
         try:
             return json.load(f)
         except json.JSONDecodeError:
@@ -18,5 +18,5 @@ def load_expenses():
 
 def save_expenses(expenses):
     """Saglabā izdevumus JSON failā."""
-    with open(FILE_PATH, "w", encoding="utf-8") as f:
+    with FILE_PATH.open("w", encoding="utf-8") as f:
         json.dump(expenses, f, ensure_ascii=False, indent=2)
