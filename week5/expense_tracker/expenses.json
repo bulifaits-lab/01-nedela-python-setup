@@ -22,5 +22,11 @@
     "amount": 15.0,
     "category": "Komunālie maksājumi",
     "description": "apkure"
+  },
+  {
+    "date": "2026-04-02",
+    "amount": 20.0,
+    "category": "Veselība",
+    "description": "rentgens"
   }
 ]
