@@ -1,0 +1,20 @@
+[
+  {
+    "date": "2026-04-06",
+    "amount": 1.0,
+    "category": "Ēdiens",
+    "description": "udens"
+  },
+  {
+    "date": "2026-04-05",
+    "amount": 2.0,
+    "category": "Transports",
+    "description": "degviela"
+  },
+  {
+    "date": "2025-06-04",
+    "amount": 3.0,
+    "category": "Izklaide",
+    "description": "sokolade"
+  }
+]
