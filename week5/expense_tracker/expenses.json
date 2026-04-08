@@ -28,5 +28,17 @@
     "amount": 20.0,
     "category": "Veselība",
     "description": "rentgens"
+  },
+  {
+    "date": "2026-12-12",
+    "amount": 1.0,
+    "category": "Ēdiens",
+    "description": "sviests"
+  },
+  {
+    "date": "2026-04-12",
+    "amount": 5.0,
+    "category": "Transports",
+    "description": "taksis"
   }
 ]
